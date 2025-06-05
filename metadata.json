@@ -1,0 +1,5 @@
+{
+  "name": "NGSpurs IT Solutions Showcase",
+  "description": "A responsive web application showcasing NGSpurs' IT products, services, case studies, and providing an AI assistant for user queries. Built with React, TypeScript, and Tailwind CSS.",
+  "requestFramePermissions": []
+}
