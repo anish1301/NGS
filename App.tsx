@@ -13,9 +13,11 @@ import CaseStudyDetailPage from './pages/CaseStudyDetailPage';
 import AboutUsPage from './pages/AboutUsPage';
 import ContactPage from './pages/ContactPage';
 import AIAssistantButton from './components/AIAssistantButton';
+import useScrollToTop from './hooks/useScrollToTop';
 
 const App: React.FC = () => {
   const { theme } = useTheme();
+  useScrollToTop();
 
   return (
     <div className={`flex flex-col min-h-screen ${theme === 'dark' ? 'dark' : ''} bg-neutral-light dark:bg-neutral-darker text-gray-900 dark:text-gray-100 transition-all duration-300 ease-in-out`}>

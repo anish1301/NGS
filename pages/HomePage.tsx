@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Button from '../components/common/Button';
 import ProductCard from '../components/ProductCard';
 import ServiceCard from '../components/ServiceCard';
+import FAQAccordion from '../components/FAQAccordion';
 import { PRODUCTS_DATA, SERVICES_DATA } from '../constants';
 // import { ArrowRightIcon } from '../components/icons/ArrowRightIcon';
 import { EyeIcon } from '../components/icons/EyeIcon';
@@ -281,6 +282,34 @@ const HomePage: React.FC = () => {
                 <StarIcon className="h-5 w-5" />
                 <StarIcon className="h-5 w-5" />
                 <StarIcon className="h-5 w-5" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* FAQ Section */}
+      <AnimatedSection className="py-16 bg-gray-50 dark:bg-gray-900">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-semibold text-center mb-12 text-gray-800 dark:text-gray-100">Frequently Asked Questions</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            <div className="order-2 md:order-1">
+              <FAQAccordion />
+            </div>
+            <div className="order-1 md:order-2 flex justify-center mb-8 md:mb-0">
+              <div className="relative w-full max-w-md">
+                <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-700">
+                  <img
+                    src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Technical Support Team"
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = 'https://via.placeholder.com/800x600?text=Support+Team';
+                    }}
+                  />
+                </div>
+                <div className="absolute inset-0 bg-primary-DEFAULT/10 rounded-lg"></div>
               </div>
             </div>
           </div>

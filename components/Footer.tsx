@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
             <span className="mx-2">|</span>
             <Link to="/terms-of-service" className="hover:text-primary-light transition-colors">Terms of Service</Link>
           </p>
-          <p className="mt-4 text-xs">Modernized for  NGSpurs Solutions</p>
+          {/* <p className="mt-4 text-xs">Modernized for  NGSpurs Solutions</p> */}
         </div>
       </div>
     </footer>
